@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify | Assign 1️⃣6️⃣</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens : {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '1024px',
+                    xl: '1256px'
+                },
+
+                extend: {
+                    colors: {
+                        ui01: '#008060',
+                        btnHover: '#004c3f',
+                        section01Bg: '#fbf7ed',
+                        section02Bg: '#004c3f',
+                        section04Bg: '#f3fcf4',
+                        section06Bg: '#002e25',
+                        section07Bg: '#fbf7ed',
+                        footerBg: '#002e25',
+                        clifford: '#da373d',
+                    }
+                }
+            },
+            variants: {
+                extend: {
+                    display: ['group-focus']
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="flex sticky top-0 shadow-lg justify-between items-center bg-section01Bg px-10 md:px-20 py-1">
+        <!-- Left NavBar -->
+        <div class="flex items-center justify-center ">
+            <!-- logo -->
+            <div>
+                <img src="./assets/logo.png" width="125px">
+            </div>
+    
+            <!-- Menu Left Container-->
+            <div class="hidden gap-1 ml-4 xl:flex">
+
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[17px] font-semibold text-[#42474c] w-30 p-2">
+                        Start 
+                        <span>
+                            <img src="./assets/down.svg" >
+                        </span>
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[17px] font-semibold text-[#42474c] w-30 p-2">
+                        Sell 
+                        <span>
+                            <img src="./assets/down.svg" >
+                        </span>
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[17px] font-semibold text-[#42474c] w-30 p-2">
+                        Market 
+                        <span>
+                            <img src="./assets/down.svg" >
+                        </span>
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[17px] font-semibold text-[#42474c] w-30 p-2">
+                        Manage 
+                        <span>
+                            <img src="./assets/down.svg" >
+                        </span>
+                    </button>
+                </div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        <!-- Right NavBar -->
+        <div class="flex justify-center items-center">
+
+            <!-- Menu Left Container-->
+            <div class="hidden gap-1 mr-4 xl:flex">
+
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[17px] font-semibold text-[#42474c] w-30 p-2">
+                        Pricing 
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[17px] font-semibold text-[#42474c] w-30 p-2">
+                        Learn 
+                        <span>
+                            <img src="./assets/down.svg" >
+                        </span>
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[17px] font-semibold text-[#42474c] w-30 p-2">
+                        Log in 
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mennu btn -->
+            <div class="hidden xl:flex">
+                <a class="text-white font-bold shadow text-lg bg-ui01 px-4 py-2 rounded" href="">
+                    Try for free
+                </a>
+            </div>
+
+            <!-- for small screen -->
+            <div class="flex justify-center items-center gap-2 xl:hidden">
+                <div class="flex flex-col items-start  ml-2">
+                    <button  class="flex justify-center  items-center text-[20px] font-semibolds text-[#42474c] w-30 p-2">
+                        Log in 
+                    </button>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7  w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex flex-col bg-section01Bg lg:flex-row">
+
+        <!-- CTA -->
+        <div class="flex flex-col justify-center p-20 items-start lg:w-1/2">
+
+            <h1 class="text-3xl text-[#004c3f] font-bold leading-[1.4] text-left md:text-5xl">
+                The easiest way to sell online in India
+            </h1>
+
+            <h2 class="text-lg mt-6 md:mt-12 md:text-xl text-[#004c3f]">
+                Try one of the most powerful platforms on the market for free. No technical knowledge needed.
+            </h2>
+
+            
+
+            <div class="mt-4 md:mt-8 self-start flex-col flex md:flex-row">
+                
+                <div>
+                    <input class="px-8 pl-4 py-2 mr-4 text-left  rounded border-[1px] border-[#004c3f] w-[225px]"
+                type="email" placeholder="Enter your email address">
+                </div>
+
+                <a class="text-white text-center font-semibold shadow text-md bg-ui01 px-3 py-2 rounded mt-4 md:mt-0 w-[225px] md:w-auto" href="">
+                    Try for free
+                </a>
+            </div>
+
+            <p class="mt-4 md:mt-6 text-sm text-[#004c3f]">
+                Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.
+            </p>
+
+        </div>
+
+        <!-- Image -->
+        <div class="flex justify-center lg:w-1/2">
+            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/in-hero-product-small-0c64c4c1013fc8ac477cb5ff62bf5b56b2903aec697e6b708b90d3b65a09baf8.jpg">
+        </div>
+    </main>
+</body>
+</html>
